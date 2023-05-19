@@ -19,6 +19,10 @@ class _sholka_details_pageState extends State<sholka_details_page> {
           "Sholka No : ${sholkadata.Shlok_index}",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
         ),
+        backgroundColor: Colors.yellow.shade100,
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.mic,)),
+        ],
         centerTitle: true,
       ),
       body: Container(
@@ -88,7 +92,7 @@ class _sholka_details_pageState extends State<sholka_details_page> {
                   padding: const EdgeInsets.all(16),
                   child: Text(
                     "${sholkadata.English_Shlok}",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                 ),
                 decoration: BoxDecoration(
@@ -114,7 +118,7 @@ class _sholka_details_pageState extends State<sholka_details_page> {
                   padding: const EdgeInsets.all(16),
                   child: Text(
                     "${sholkadata.Hindi_shlok}",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                 ),
                 decoration: BoxDecoration(
@@ -140,7 +144,7 @@ class _sholka_details_pageState extends State<sholka_details_page> {
                   padding: const EdgeInsets.all(16),
                   child: Text(
                     "${sholkadata.Gujarati_shlok}",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                 ),
                 decoration: BoxDecoration(

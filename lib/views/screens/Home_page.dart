@@ -21,10 +21,11 @@ class _Home_pageState extends State<Home_page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.yellow.shade300,
         title: Text(
           "Sanskrit Sholka",
           style: TextStyle(
-            fontSize: 22,
+            fontSize: 26,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -44,15 +45,12 @@ class _Home_pageState extends State<Home_page> {
           itemBuilder: (context, index) => Card(
             elevation: 14,
             child: ListTile(
-              hoverColor: Colors.red,
-              focusColor: Colors.blue,
               horizontalTitleGap: 2,
               style: ListTileStyle.list,
               onTap: () {
                 Navigator.of(context).pushNamed("sholka_details_page",
-                    arguments:
-                        Provider.of<JsonProvider>(context, listen: false)
-                            .chepters[index]);
+                    arguments: Provider.of<JsonProvider>(context, listen: false)
+                        .chepters[index]);
                 setState(() {});
               },
               leading: Text(
@@ -62,7 +60,7 @@ class _Home_pageState extends State<Home_page> {
               title: Text(
                   "${Provider.of<JsonProvider>(context).chepters[index].Sanskrit_Shlok}"),
               subtitle: Text(
-                  "-  ${Provider.of<JsonProvider>(context).chepters[index].Source}"),
+                  "- ${Provider.of<JsonProvider>(context).chepters[index].Source}",style: TextStyle(fontWeight: FontWeight.bold),),
               trailing: IconButton(
                 onPressed: () {},
                 icon: Icon(

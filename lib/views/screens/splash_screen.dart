@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,14 +20,14 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(),
               child: Container(
                 alignment: Alignment.center,
                 child: Image(
                   image: AssetImage('assets/images/image-removebg-preview.png'),
                 ),
                 height: 500,
-                width: 400,
+                width: 430,
                 decoration: BoxDecoration(
                     color: Colors.amber,
                     borderRadius: BorderRadius.only(
@@ -36,7 +37,11 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             SizedBox(
-              height: 200,
+              height: 60,
+            ),
+            CupertinoActivityIndicator(radius: 16),
+            SizedBox(
+              height: 130,
             ),
             ElevatedButton(
               onPressed: () {
@@ -46,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "NEXT",
+                  "प्रारंभः",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
               ),
