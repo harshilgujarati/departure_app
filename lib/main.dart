@@ -5,6 +5,8 @@ import 'package:departure/views/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'views/screens/autor_details.dart';
+
 
 void main(){
   runApp(
@@ -21,6 +23,7 @@ void main(){
             "Home_page": (context) => Home_page(),
             "/": (context) => SplashScreen(),
             "sholka_details_page": (context) => sholka_details_page(),
+            "autor_details": (context) => autor_details(),
           },
         );
       },

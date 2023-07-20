@@ -41,7 +41,10 @@ class _Home_pageState extends State<Home_page> {
                   : Get.changeTheme(ThemeData.dark(useMaterial3: true));
               setState(() {});
             },
-            icon: Icon(Icons.sunny),
+            icon: Icon(
+              Icons.sunny,
+              size: 32,
+            ),
           ),
         ],
       ),
@@ -52,7 +55,9 @@ class _Home_pageState extends State<Home_page> {
             elevation: 14,
             child: ListTile(
               horizontalTitleGap: 2,
+              focusColor: Colors.red,
               style: ListTileStyle.list,
+              isThreeLine: true,
               onTap: () {
                 Navigator.of(context).pushNamed("sholka_details_page",
                     arguments: Provider.of<JsonProvider>(context, listen: false)
@@ -70,9 +75,18 @@ class _Home_pageState extends State<Home_page> {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               trailing: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    Navigator.of(context).pushNamed(
+                      "autor_details",
+                      arguments:
+                          Provider.of<JsonProvider>(context, listen: false)
+                              .chepters[index],
+                    );
+                  });
+                },
                 icon: Icon(
-                  Icons.favorite_border_rounded,
+                  Icons.read_more,
                   size: 36,
                   color: Colors.red,
                 ),
