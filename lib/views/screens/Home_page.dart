@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import '../../controllers/providers/sholka_provider.dart';
 
@@ -32,11 +33,16 @@ class _Home_pageState extends State<Home_page> {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () {},
-            icon: (ThemeMode.dark == true)
-                ? Icon(Icons.mode_night)
-                : Icon(Icons.light_mode),
-          )
+            onPressed: () {
+              (ThemeData.light() == true)
+                  ? Get.changeTheme(
+                      ThemeData.light(useMaterial3: true),
+                    )
+                  : Get.changeTheme(ThemeData.dark(useMaterial3: true));
+              setState(() {});
+            },
+            icon: Icon(Icons.sunny),
+          ),
         ],
       ),
       body: Container(
@@ -60,7 +66,9 @@ class _Home_pageState extends State<Home_page> {
               title: Text(
                   "${Provider.of<JsonProvider>(context).chepters[index].Sanskrit_Shlok}"),
               subtitle: Text(
-                  "- ${Provider.of<JsonProvider>(context).chepters[index].Source}",style: TextStyle(fontWeight: FontWeight.bold),),
+                "- ${Provider.of<JsonProvider>(context).chepters[index].Source}",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               trailing: IconButton(
                 onPressed: () {},
                 icon: Icon(
