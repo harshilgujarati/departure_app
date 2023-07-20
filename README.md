@@ -44,3 +44,9 @@ https://github.com/harshilgujarati/departure_app/assets/131511029/2b7317f8-3db8-
 <img align="left" src="https://github.com/harshilgujarati/departure_app/assets/131511029/bdebf282-c52d-481a-98a2-73f39225d5dc" width="220px">
 <img align="left" src="https://github.com/harshilgujarati/departure_app/assets/131511029/e8c218f9-3321-4c41-a459-26e2a33c9b39" width="220px">
 <img align="left" src="https://github.com/harshilgujarati/departure_app/assets/131511029/583db614-ac16-4200-8cbc-cd223e81610f" width="220px">
+
+<img align="left" src="https://github.com/harshilgujarati/departure_app/assets/131511029/d6f55355-57c6-4242-99ec-1cf5ee76f5b4" width="220px">
+<img align="left" src="https://github.com/harshilgujarati/departure_app/assets/131511029/38aab62e-458f-474e-b356-a9247eec0828" width="220px">
+<img src="https://github.com/harshilgujarati/departure_app/assets/131511029/8647de53-9686-4e52-b199-00d3e990107b" width="220px">
+
+<img align="left" src="https://github.com/harshilgujarati/departure_app/assets/131511029/803e6824-06ea-46d8-8bba-9ac0bfcb78f1" width="220px">
